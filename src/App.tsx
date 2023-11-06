@@ -5,8 +5,41 @@ import Section from './components/Section/Section'
 function App() {
   return (
     <>
-      <Header />
-      <Section />
+      <Header
+        name='Christopher Kumm'
+        imgUrl='/chris.jpg'
+        email='chrislkumm@protonmail.com'
+        phone='(952) 245-3771'
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </Header>
+      <Section name='Skills'>
+        <ul>
+          <li>React TypeScript (Next.js)</li>
+          <li>HTML / CSS / SCSS / JavaScript / TypeScript</li>
+          <li>Express.js / Node.js / GraphQL / REST</li>
+          <li>Python (especially Django Rest Framework)</li>
+          <li>Bash scripting</li>
+          <li>Git / GitHub / GitLab</li>
+          <li>SSH / VPS / Docker / Linux</li>
+          <li>Web Design</li>
+          <li>GitHub Actions / GitLab CI/CD</li>
+          <li>Making high-performance websites (perfect Lighthouse scores)</li>
+          <li>SEO best Practices</li>
+          <li>Open source contribution</li>
+          <li>Scientific background with a love of learning</li>
+        </ul>
+      </Section>
+      <Section name='Key Projects'>
+        <p>TODO: Key Projects</p>
+      </Section>
+      <Section name='Work Experience'>
+        <p>TODO: Work Experience</p>
+      </Section>
+      <Section name='Education'>
+        <p>TODO: Education and Training</p>
+      </Section>
     </>
   )
 }
