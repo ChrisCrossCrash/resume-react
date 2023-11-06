@@ -33,6 +33,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "modern-normalize": "^2.0.0",
     "prettier": "^3.0.3",
     "sass": "^1.69.5",
     "typescript": "^5.0.2",
