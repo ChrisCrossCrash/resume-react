@@ -1,1 +1,155 @@
 @use 'modern-normalize';
+
+:root {
+  --color-primary: #223f99;
+  --color-headings: #231f20;
+  --color-text: #231f20;
+  --color-text-light: #888;
+  --text-size-multiplier: 1;
+  --text-size-heading-main: calc(30px * var(--text-size-multiplier));
+  --text-size-heading-secondary: calc(18px * var(--text-size-multiplier));
+  --text-size-lead-text: calc(16px * var(--text-size-multiplier));
+  --text-size-body: calc(12px * var(--text-size-multiplier));
+  --size-section-margin: 12px;
+  --size-left-col-width: 140px;
+}
+
+// For screen display
+body {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  color: var(--color-text);
+  font-size: var(--text-size-body);
+}
+
+* {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  color: var(--color-headings);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--text-size-heading-main);
+}
+
+h2,
+h3 {
+  font-size: var(--text-size-heading-secondary);
+  margin-bottom: 5px;
+}
+
+ul {
+  padding-left: 0.95rem;
+}
+
+li {
+  margin-bottom: 1.75px;
+}
+
+.header-img {
+  width: 100%;
+  border: 5px solid var(--color-primary);
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.header-info {
+  font-size: calc(var(--size-left-col-width) * 0.085);
+}
+
+.header-name {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.header-paragraph {
+  font-size: var(--text-size-lead-text);
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.section,
+.header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: var(--size-section-margin);
+}
+
+.section {
+  align-items: baseline;
+}
+
+.left-col {
+  width: var(--size-left-col-width);
+  flex-shrink: 0;
+
+  * {
+    color: var(--color-primary);
+  }
+}
+
+// GENERIC ITEMS
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item-subheading {
+  margin-bottom: 5px;
+}
+
+.item-details {
+  // ...
+}
+
+.list-heading {
+  margin-bottom: 5px;
+}
+
+.text-muted {
+  color: var(--color-text-light);
+}
+
+@media screen {
+  body {
+    width: 8.5in;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    background: white;
+    position: relative;
+    padding: 1in;
+  }
+
+  .page-break {
+    border-top: 1px dashed #666;
+  }
+}
+
+// For print
+@media print {
+  .page-break {
+    page-break-before: always;
+  }
+
+  @page {
+    size: letter;
+    margin: 1in;
+  }
+
+  body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    box-shadow: none;
+    background: none;
+    position: static;
+  }
+}
