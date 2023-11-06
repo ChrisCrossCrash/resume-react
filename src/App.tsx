@@ -1,5 +1,8 @@
 import './App.scss'
 import Header from './components/Header/Header'
+import ItemEducation from './components/ItemEducation/ItemEducation'
+import ItemExperience from './components/ItemExperience/ItemExperience'
+import ItemProject from './components/ItemProject/ItemProject'
 import Section from './components/Section/Section'
 
 function App() {
@@ -32,13 +35,13 @@ function App() {
         </ul>
       </Section>
       <Section name='Key Projects'>
-        <p>TODO: Key Projects</p>
+        <ItemProject />
       </Section>
       <Section name='Work Experience'>
-        <p>TODO: Work Experience</p>
+        <ItemExperience />
       </Section>
       <Section name='Education'>
-        <p>TODO: Education and Training</p>
+        <ItemEducation />
       </Section>
     </>
   )
