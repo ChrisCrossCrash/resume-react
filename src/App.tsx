@@ -1,7 +1,14 @@
 import './App.scss'
+import Header from './components/Header/Header'
+import Section from './components/Section/Section'
 
 function App() {
-  return <>TODO: Create resume</>
+  return (
+    <>
+      <Header />
+      <Section />
+    </>
+  )
 }
 
 export default App
