@@ -1,3 +1,21 @@
 .base {
+  margin-bottom: var(--size-item-margin);
+  position: relative;
+}
+
+.info {
+  margin-bottom: 5px;
+
+  &>* {
+    margin-bottom: 0;
+  }
+}
+
+.subheading {
+  font-size: var(--text-size-body);
+  font-family: var(--text-font-body);
+}
+
+.dates {
   // Nothing yet...
 }

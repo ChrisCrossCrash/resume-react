@@ -10,19 +10,23 @@
   --text-size-heading-secondary: calc(18px * var(--text-size-multiplier));
   --text-size-lead-text: calc(16px * var(--text-size-multiplier));
   --text-size-body: calc(12px * var(--text-size-multiplier));
-  --size-section-margin: 12px;
+  --text-font-heading: neue-haas-grotesk-display, sans-serif;
+  --text-font-body: neue-haas-grotesk-text, sans-serif;
+  --size-section-margin: 60px;
+  --size-item-margin: 40px;
   --size-left-col-width: 140px;
 }
 
 // For screen display
 body {
-  font-family: neue-haas-grotesk-text, sans-serif;
+  font-family: var(--text-font-body);
   color: var(--color-text);
   font-size: var(--text-size-body);
 }
 
 * {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 h1,
@@ -31,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: neue-haas-grotesk-display, sans-serif;
+  font-family: var(--text-font-heading);
   color: var(--color-headings);
   text-wrap: balance;
 }
@@ -72,16 +76,6 @@ li {
   * {
     color: var(--color-primary);
   }
-}
-
-// GENERIC ITEMS
-
-.item {
-  margin-bottom: 15px;
-}
-
-.item-subheading {
-  margin-bottom: 5px;
 }
 
 .list-heading {
