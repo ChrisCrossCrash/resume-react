@@ -3,6 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+    "author": {
+    "name": "Christopher Kumm",
+    "email": "chrislkumm@protonmail.com",
+    "url": "https://www.chriskumm.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisCrossCrash/resume-html"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
