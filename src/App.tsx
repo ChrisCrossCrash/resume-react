@@ -12,8 +12,10 @@ function App() {
         email='chrislkumm@protonmail.com'
         phone='(952) 245-3771'
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Full-stack developer proficient with a well-rounded knowledge of web
+        development, especially React TypeScript, Next.js, and Django Rest
+        Framework, seeking a remote position to create impactful web solutions
+        with a dynamic team.
       </Header>
       <Section name='Skills'>
         <ul>
