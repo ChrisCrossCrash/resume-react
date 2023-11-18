@@ -5,11 +5,12 @@ type ItemProps = {
   subheading?: string
   dates?: string
   children: React.ReactNode
+  style?: React.CSSProperties
 }
 
 function Item(props: ItemProps) {
   return (
-    <div className={styles.base}>
+    <div className={styles.base} style={props.style}>
       <h3>{props.heading}</h3>
       <div className={styles.info}>
         {props.subheading && (

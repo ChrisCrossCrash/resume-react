@@ -17,7 +17,7 @@ function App() {
         Framework, seeking a remote position to create impactful web solutions
         with a dynamic team.
       </Header>
-      <Section name='Skills'>
+      <Section name='Skills' style={{ marginBottom: '2rem' }}>
         <ul>
           <li>React TypeScript (Next.js)</li>
           <li>HTML / CSS / SCSS / JavaScript / TypeScript</li>
@@ -35,16 +35,6 @@ function App() {
         </ul>
       </Section>
       <Section name='Key Projects'>
-        <Item
-          heading='PlotMaster.ai'
-          dates='11/2023'
-          subheading='Freelance Project'
-        >
-          <div>
-            <p>website: https://www.plotmaster.ai/</p>
-          </div>
-          <p>TODO: Description</p>
-        </Item>
         <Item
           heading='ChrisKumm.com'
           subheading='Portfolio Website'
@@ -82,6 +72,23 @@ function App() {
             for online or in-person training seminars. The site has a Next.js
             front end and a Django Rest Framework back end. It has email
             notifications for admins and Stripe integration for payments.
+          </p>
+        </Item>
+        <Item
+          heading='PlotMaster.ai'
+          dates='11/2023'
+          subheading='Conversion to Next.js (Freelance)'
+        >
+          <div>
+            <p>website: https://www.plotmaster.ai</p>
+          </div>
+          <p>
+            PlotMaster.ai uses generative AI to automatically create
+            personalized and illustrated story books based on user prompts. I
+            was commissioned to convert the website's front end to a Next.js
+            React TypeScript project, which dramatically improved the
+            performance of the site, and decoupled the front end from the
+            back-end server.
           </p>
         </Item>
         <Item
@@ -145,6 +152,7 @@ function App() {
             </li>
           </ul>
         </Item>
+        <div className='page-break' />
         <Item
           heading='Beckman Coulter'
           subheading='Quality Control Technician'
@@ -220,6 +228,7 @@ function App() {
           </ul>
         </Item>
       </Section>
+      <div className='page-break' />
       <Section name='Education'>
         <Item
           heading='AAS in Nanoscience Technology'
